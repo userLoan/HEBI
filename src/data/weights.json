@@ -1,0 +1,87 @@
+{
+  "indicators": [
+    {
+      "key": "pm25",
+      "group": "exposure",
+      "unit": "µg/m³",
+      "labelVi": "PM2.5",
+      "labelEn": "PM2.5",
+      "direction": "higherIsWorse",
+      "low": 5,
+      "high": 50,
+      "weight": 0.3
+    },
+    {
+      "key": "heatTemp",
+      "group": "exposure",
+      "unit": "°C",
+      "labelVi": "Nhiệt độ",
+      "labelEn": "Heat temperature",
+      "direction": "higherIsWorse",
+      "low": 30,
+      "high": 40,
+      "weight": 0.2
+    },
+    {
+      "key": "noise",
+      "group": "exposure",
+      "unit": "dB",
+      "labelVi": "Tiếng ồn",
+      "labelEn": "Noise",
+      "direction": "higherIsWorse",
+      "low": 50,
+      "high": 80,
+      "weight": 0.2
+    },
+    {
+      "key": "popDensity",
+      "group": "vulnerability",
+      "unit": "người/km²",
+      "labelVi": "Mật độ dân số",
+      "labelEn": "Population density",
+      "direction": "higherIsWorse",
+      "low": 500,
+      "high": 5000,
+      "weight": 0.1
+    },
+    {
+      "key": "greenSpace",
+      "group": "vulnerability",
+      "unit": "m²/người",
+      "labelVi": "Thiếu không gian xanh",
+      "labelEn": "Lack of green space",
+      "direction": "higherIsBetter",
+      "low": 0,
+      "high": 10,
+      "weight": 0.08
+    },
+    {
+      "key": "vulnerableGroup",
+      "group": "vulnerability",
+      "unit": "% dân số",
+      "labelVi": "Nhóm dễ tổn thương",
+      "labelEn": "Vulnerable population",
+      "direction": "higherIsWorse",
+      "low": 20,
+      "high": 40,
+      "weight": 0.07
+    },
+    {
+      "key": "grdpPerCapita",
+      "group": "vulnerability",
+      "unit": "triệu đồng/năm",
+      "labelVi": "Rủi ro thu nhập",
+      "labelEn": "Income risk",
+      "direction": "higherIsBetter",
+      "low": 80,
+      "high": 200,
+      "weight": 0.05
+    }
+  ],
+  "riskLevels": [
+    { "min": 0, "max": 39.9, "labelVi": "Thấp", "labelEn": "Low", "color": "#2e9e5b" },
+    { "min": 40, "max": 59.9, "labelVi": "Trung bình", "labelEn": "Medium", "color": "#d4a72c" },
+    { "min": 60, "max": 74.9, "labelVi": "Cao", "labelEn": "High", "color": "#e0782e" },
+    { "min": 75, "max": 100, "labelVi": "Rất cao", "labelEn": "Very high", "color": "#c9382f" }
+  ]
+}

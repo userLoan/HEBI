@@ -1,0 +1,84 @@
+{
+  "default": {
+    "recommendationVi": "Tiếp tục theo dõi dữ liệu và cập nhật khuyến nghị khi có thêm thông tin.",
+    "recommendationEn": "Continue monitoring the data and update recommendations as more information becomes available.",
+    "action1Vi": "",
+    "action1En": "",
+    "action2Vi": "",
+    "action2En": "",
+    "explanationVi": "",
+    "explanationEn": ""
+  },
+  "byDriver": {
+    "pm25": {
+      "recommendationVi": "Ưu tiên giảm phơi nhiễm và phát thải bụi mịn PM2.5.",
+      "recommendationEn": "Prioritize reducing PM2.5 exposure and fine particulate emissions.",
+      "action1Vi": "Tăng giám sát chất lượng không khí tại trường học, bệnh viện và khu dân cư đông đúc.",
+      "action1En": "Increase air quality monitoring at schools, hospitals, and densely populated neighborhoods.",
+      "action2Vi": "Phát cảnh báo sức khỏe trong các ngày có nồng độ PM2.5 cao.",
+      "action2En": "Issue health advisories on days with high PM2.5 concentrations.",
+      "explanationVi": "PM2.5 là yếu tố đóng góp lớn nhất vào gánh nặng môi trường của thành phố.",
+      "explanationEn": "PM2.5 is the single largest contributor to the city's environmental burden."
+    },
+    "heatTemp": {
+      "recommendationVi": "Ưu tiên giảm căng thẳng nhiệt tại các khu vực đô thị nóng.",
+      "recommendationEn": "Prioritize reducing heat stress in hot urban areas.",
+      "action1Vi": "Tăng cây xanh, bóng râm và các điểm làm mát công cộng.",
+      "action1En": "Expand urban tree cover, shading, and public cooling stations.",
+      "action2Vi": "Phát cảnh báo nắng nóng cho người lao động ngoài trời và nhóm dễ tổn thương.",
+      "action2En": "Issue heat warnings for outdoor workers and vulnerable groups.",
+      "explanationVi": "Nhiệt đô thị là yếu tố đóng góp lớn nhất vào gánh nặng môi trường của thành phố.",
+      "explanationEn": "Urban heat is the single largest contributor to the city's environmental burden."
+    },
+    "noise": {
+      "recommendationVi": "Ưu tiên kiểm soát tiếng ồn giao thông và xây dựng.",
+      "recommendationEn": "Prioritize controlling traffic and construction noise.",
+      "action1Vi": "Theo dõi tiếng ồn tại các trục đường lớn, trường học và bệnh viện.",
+      "action1En": "Monitor noise levels along major roads, schools, and hospitals.",
+      "action2Vi": "Hạn chế còi xe và hoạt động gây ồn tại các khung giờ nhạy cảm.",
+      "action2En": "Restrict honking and noisy activity during sensitive hours.",
+      "explanationVi": "Tiếng ồn là yếu tố đóng góp lớn nhất vào gánh nặng môi trường của thành phố.",
+      "explanationEn": "Noise is the single largest contributor to the city's environmental burden."
+    },
+    "popDensity": {
+      "recommendationVi": "Ưu tiên can thiệp tại các khu vực có mật độ dân số cao.",
+      "recommendationEn": "Prioritize interventions in high-population-density areas.",
+      "action1Vi": "Đặt thiết bị giám sát môi trường tại các khu dân cư đông đúc.",
+      "action1En": "Deploy environmental monitoring equipment in densely populated neighborhoods.",
+      "action2Vi": "Tập trung cảnh báo và nguồn lực vào nơi có số người bị ảnh hưởng lớn nhất.",
+      "action2En": "Concentrate alerts and resources where the largest number of people are affected.",
+      "explanationVi": "Mật độ dân số cao làm cùng một mức ô nhiễm ảnh hưởng đến nhiều người hơn.",
+      "explanationEn": "High population density means the same level of pollution affects more people."
+    },
+    "greenSpace": {
+      "recommendationVi": "Ưu tiên mở rộng và bảo vệ không gian xanh đô thị.",
+      "recommendationEn": "Prioritize expanding and protecting urban green space.",
+      "action1Vi": "Phát triển công viên nhỏ, hành lang cây xanh và cây xanh quanh trường học.",
+      "action1En": "Develop pocket parks, green corridors, and tree cover around schools.",
+      "action2Vi": "Ưu tiên các khu dân cư đông đúc đang thiếu khả năng tiếp cận không gian xanh.",
+      "action2En": "Prioritize dense neighborhoods that currently lack access to green space.",
+      "explanationVi": "Thiếu không gian xanh làm giảm khả năng thích ứng với nhiệt, ô nhiễm và tiếng ồn.",
+      "explanationEn": "A lack of green space reduces resilience to heat, pollution, and noise."
+    },
+    "vulnerableGroup": {
+      "recommendationVi": "Ưu tiên bảo vệ trẻ em, người cao tuổi và người có vấn đề sức khỏe.",
+      "recommendationEn": "Prioritize protecting children, the elderly, and people with health conditions.",
+      "action1Vi": "Gửi cảnh báo môi trường qua trường học, bệnh viện và cơ sở cộng đồng.",
+      "action1En": "Distribute environmental alerts through schools, hospitals, and community centers.",
+      "action2Vi": "Ưu tiên giám sát tại các khu vực tập trung nhiều nhóm dễ tổn thương.",
+      "action2En": "Prioritize monitoring in areas with high concentrations of vulnerable residents.",
+      "explanationVi": "Tỷ lệ nhóm dễ tổn thương cao làm tác động môi trường trở nên nghiêm trọng hơn.",
+      "explanationEn": "A high share of vulnerable residents makes environmental impacts more severe."
+    },
+    "grdpPerCapita": {
+      "recommendationVi": "Ưu tiên các biện pháp bảo vệ môi trường dễ tiếp cận và chi phí thấp.",
+      "recommendationEn": "Prioritize accessible, low-cost environmental protection measures.",
+      "action1Vi": "Tập trung đầu tư công vào các cộng đồng có khả năng tự thích ứng thấp.",
+      "action1En": "Focus public investment on communities with low adaptive capacity.",
+      "action2Vi": "Cung cấp cảnh báo và dịch vụ bảo vệ sức khỏe miễn phí hoặc trợ giá.",
+      "action2En": "Provide free or subsidized health-protection alerts and services.",
+      "explanationVi": "Khả năng thích ứng kinh tế thấp làm người dân khó tự bảo vệ trước áp lực môi trường.",
+      "explanationEn": "Low economic adaptive capacity makes it harder for residents to protect themselves from environmental pressures."
+    }
+  }
+}

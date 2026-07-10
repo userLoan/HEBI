@@ -1,0 +1,107 @@
+[
+  {
+    "id": "ha-noi",
+    "nameVi": "Hà Nội",
+    "nameEn": "Hanoi",
+    "lat": 21.0285,
+    "lon": 105.8542,
+    "indicators": {
+      "pm25": 45.9,
+      "heatTemp": 37,
+      "noise": 75,
+      "popDensity": 2555.8,
+      "greenSpace": 5.52,
+      "vulnerableGroup": 28,
+      "grdpPerCapita": 151
+    },
+    "reference": {
+      "pm25Now": 9,
+      "tempTodayMax": 33,
+      "updatedAt": "2026-07-10T19:00:00+07:00"
+    }
+  },
+  {
+    "id": "tp-hcm",
+    "nameVi": "TP. Hồ Chí Minh",
+    "nameEn": "Ho Chi Minh City",
+    "lat": 10.8231,
+    "lon": 106.6297,
+    "indicators": {
+      "pm25": 28,
+      "heatTemp": 35,
+      "noise": 78,
+      "popDensity": 4513.1,
+      "greenSpace": 2.4,
+      "vulnerableGroup": 25,
+      "grdpPerCapita": 170
+    },
+    "reference": {
+      "pm25Now": 19,
+      "tempTodayMax": 32,
+      "updatedAt": "2026-07-10T20:00:00+07:00"
+    }
+  },
+  {
+    "id": "da-nang",
+    "nameVi": "Đà Nẵng",
+    "nameEn": "Da Nang",
+    "lat": 16.0544,
+    "lon": 108.2022,
+    "indicators": {
+      "pm25": 19.9,
+      "heatTemp": 36,
+      "noise": 70,
+      "popDensity": 969.2,
+      "greenSpace": 2.4,
+      "vulnerableGroup": 27,
+      "grdpPerCapita": 119
+    },
+    "reference": {
+      "pm25Now": 7,
+      "tempTodayMax": 34,
+      "updatedAt": "2026-07-10T19:00:00+07:00"
+    }
+  },
+  {
+    "id": "hai-phong",
+    "nameVi": "Hải Phòng",
+    "nameEn": "Hai Phong",
+    "lat": 20.8449,
+    "lon": 106.6881,
+    "indicators": {
+      "pm25": 25,
+      "heatTemp": 35,
+      "noise": 72,
+      "popDensity": 1379,
+      "greenSpace": 3.8,
+      "vulnerableGroup": 30,
+      "grdpPerCapita": 173
+    },
+    "reference": {
+      "pm25Now": 14,
+      "tempTodayMax": 31,
+      "updatedAt": "2026-07-10T20:00:00+07:00"
+    }
+  },
+  {
+    "id": "can-tho",
+    "nameVi": "Cần Thơ",
+    "nameEn": "Can Tho",
+    "lat": 10.0452,
+    "lon": 105.7469,
+    "indicators": {
+      "pm25": 30,
+      "heatTemp": 35.5,
+      "noise": 68,
+      "popDensity": 874,
+      "greenSpace": 4.5,
+      "vulnerableGroup": 32,
+      "grdpPerCapita": 96
+    },
+    "reference": {
+      "pm25Now": 19,
+      "tempTodayMax": 34,
+      "updatedAt": "2026-07-10T20:00:00+07:00"
+    }
+  }
+]
