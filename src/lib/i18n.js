@@ -5,9 +5,6 @@ const STORAGE_KEY = 'hebi-lang'
 const dictionaries = {
   en: {
     appTitle: 'HEBI Dashboard',
-    appSubtitle: 'Hidden Environmental Burden Index — illustrative city demo',
-    disclaimer:
-      'Demo dataset for transparency and illustration purposes only — not an official ranking. Real-time values are shown for reference; HEBI scores use representative inputs.',
     mapTitle: 'City map',
     compareTitle: '5-city comparison',
     tableRank: 'Rank',
@@ -15,21 +12,17 @@ const dictionaries = {
     tableScore: 'HEBI score',
     tableRisk: 'Risk level',
     tableDriver: 'Main driver',
+    tableScoreBar: 'Score bar',
     detailSelectPrompt: 'Select a city on the map or in the table to see its full breakdown.',
-    exposureLabel: 'Exposure score',
-    vulnerabilityLabel: 'Vulnerability score',
     breakdownTitle: 'Component breakdown',
     recommendationTitle: 'Recommendation',
     actionsTitle: 'Suggested actions',
-    explanationTitle: 'Why this driver',
-    footerNote: 'Source data and methodology: Công thức & trọng số / Nguồn dữ liệu & API worksheets.',
     scoreUnit: '/ 100',
+    selectCityLabel: 'Select city',
+    summaryTitle: 'Summary',
   },
   vi: {
     appTitle: 'HEBI Dashboard',
-    appSubtitle: 'Chỉ số Gánh nặng Môi trường Ẩn — bản demo minh họa theo thành phố',
-    disclaimer:
-      'Bộ dữ liệu demo phục vụ minh họa và tính minh bạch, không phải xếp hạng chính thức. Giá trị thời gian thực chỉ để tham khảo; điểm HEBI dùng dữ liệu đại diện.',
     mapTitle: 'Bản đồ thành phố',
     compareTitle: 'So sánh 5 thành phố',
     tableRank: 'Hạng',
@@ -37,15 +30,14 @@ const dictionaries = {
     tableScore: 'Điểm HEBI',
     tableRisk: 'Mức rủi ro',
     tableDriver: 'Tác nhân chính',
+    tableScoreBar: 'Thanh điểm',
     detailSelectPrompt: 'Chọn một thành phố trên bản đồ hoặc trong bảng để xem chi tiết.',
-    exposureLabel: 'Điểm phơi nhiễm',
-    vulnerabilityLabel: 'Điểm dễ tổn thương',
     breakdownTitle: 'Phân tích thành phần',
     recommendationTitle: 'Khuyến nghị',
     actionsTitle: 'Hành động gợi ý',
-    explanationTitle: 'Vì sao là tác nhân chính',
-    footerNote: 'Nguồn dữ liệu và phương pháp: sheet Công thức & trọng số / Nguồn dữ liệu & API.',
     scoreUnit: '/ 100',
+    selectCityLabel: 'Chọn thành phố',
+    summaryTitle: 'Tóm tắt kết quả',
   },
 }
 

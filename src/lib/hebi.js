@@ -5,6 +5,13 @@ function clamp(value, min, max) {
   return Math.max(min, Math.min(max, value))
 }
 
+export function riskLevelForScore(value, riskLevels) {
+  return (
+    riskLevels.find((level) => value >= level.min && value <= level.max) ??
+    riskLevels[riskLevels.length - 1]
+  )
+}
+
 export function normalize(value, low, high, direction) {
   const ratio =
     direction === 'higherIsBetter'
@@ -46,9 +53,7 @@ export function computeCityScore(city, weightsConfig) {
   const vulnerabilityScore =
     vulnerabilityWeightSum > 0 ? vulnerabilityWeighted / vulnerabilityWeightSum : 0
 
-  const riskLevel =
-    riskLevels.find((level) => hebiScore >= level.min && hebiScore <= level.max) ??
-    riskLevels[riskLevels.length - 1]
+  const riskLevel = riskLevelForScore(hebiScore, riskLevels)
 
   const mainDriver = indicators.reduce((topKey, indicator) =>
     contributions[indicator.key] > contributions[topKey] ? indicator.key : topKey,

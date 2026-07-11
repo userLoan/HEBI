@@ -6,7 +6,7 @@ export default function RiskBadge({ riskLevel }) {
   return (
     <span
       className="risk-badge"
-      style={{ backgroundColor: `${riskLevel.color}22`, color: riskLevel.color, borderColor: riskLevel.color }}
+      style={{ backgroundColor: `${riskLevel.color}14`, borderColor: `${riskLevel.color}59` }}
     >
       <span className="risk-dot" style={{ backgroundColor: riskLevel.color }} />
       {localized(riskLevel, 'label', lang)}

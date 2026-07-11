@@ -5,15 +5,14 @@ export default function Header() {
   const { t } = useI18n()
 
   return (
-    <header className="app-header">
-      <div className="app-header-top">
-        <div>
+    <header className="app-masthead">
+      <div className="masthead-scale" aria-hidden="true" />
+      <div className="masthead-inner">
+        <div className="masthead-row">
           <h1>{t.appTitle}</h1>
-          <p className="app-subtitle">{t.appSubtitle}</p>
+          <LanguageToggle />
         </div>
-        <LanguageToggle />
       </div>
-      <p className="disclaimer">{t.disclaimer}</p>
     </header>
   )
 }

@@ -1,14 +1,13 @@
 import { useI18n, localized } from '../lib/i18n'
-import { indicatorLabel } from '../lib/hebi'
 import RiskBadge from './RiskBadge'
 
-export default function ComparisonTable({ scoredCities, weightsConfig, selectedCityId, onSelectCity }) {
+export default function ComparisonTable({ scoredCities, selectedCityId, onSelectCity }) {
   const { lang, t } = useI18n()
   const rows = [...scoredCities].sort((a, b) => a.score.rank - b.score.rank)
 
   return (
     <section className="panel">
-      <h2>{t.compareTitle}</h2>
+      <h2 className="panel-kicker">{t.compareTitle}</h2>
       <table className="comparison-table">
         <thead>
           <tr>
@@ -16,7 +15,7 @@ export default function ComparisonTable({ scoredCities, weightsConfig, selectedC
             <th>{t.tableCity}</th>
             <th>{t.tableScore}</th>
             <th>{t.tableRisk}</th>
-            <th>{t.tableDriver}</th>
+            <th>{t.tableScoreBar}</th>
           </tr>
         </thead>
         <tbody>
@@ -26,13 +25,24 @@ export default function ComparisonTable({ scoredCities, weightsConfig, selectedC
               className={city.id === selectedCityId ? 'is-selected' : ''}
               onClick={() => onSelectCity(city.id)}
             >
-              <td>{score.rank}</td>
-              <td>{localized(city, 'name', lang)}</td>
-              <td>{score.hebiScore.toFixed(1)}</td>
+              <td>
+                <span className="rank-chip">{score.rank}</span>
+              </td>
+              <td className="city-cell">{localized(city, 'name', lang)}</td>
+              <td className="score-cell">{score.hebiScore.toFixed(1)}</td>
               <td>
                 <RiskBadge riskLevel={score.riskLevel} />
               </td>
-              <td>{indicatorLabel(score.mainDriver, weightsConfig, lang)}</td>
+              <td>
+                <div className="scale-cell">
+                  <div className="scale-track">
+                    <div
+                      className="scale-fill"
+                      style={{ width: `${score.hebiScore}%`, backgroundColor: score.riskLevel.color }}
+                    />
+                  </div>
+                </div>
+              </td>
             </tr>
           ))}
         </tbody>
