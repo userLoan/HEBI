@@ -79,9 +79,9 @@
     }
   ],
   "riskLevels": [
-    { "min": 0, "max": 39.9, "labelVi": "Thấp", "labelEn": "Low", "color": "#2e9e5b" },
-    { "min": 40, "max": 59.9, "labelVi": "Trung bình", "labelEn": "Medium", "color": "#d4a72c" },
-    { "min": 60, "max": 74.9, "labelVi": "Cao", "labelEn": "High", "color": "#e0782e" },
-    { "min": 75, "max": 100, "labelVi": "Rất cao", "labelEn": "Very high", "color": "#c9382f" }
+    { "min": 0, "max": 39.9, "labelVi": "Thấp", "labelEn": "Low", "color": "#2e9e5b", "colorDeep": "#1f7a44" },
+    { "min": 40, "max": 59.9, "labelVi": "Trung bình", "labelEn": "Medium", "color": "#d4a72c", "colorDeep": "#8a6a12" },
+    { "min": 60, "max": 74.9, "labelVi": "Cao", "labelEn": "High", "color": "#e0782e", "colorDeep": "#b35a1c" },
+    { "min": 75, "max": 100, "labelVi": "Rất cao", "labelEn": "Very high", "color": "#c9382f", "colorDeep": "#a82920" }
   ]
 }

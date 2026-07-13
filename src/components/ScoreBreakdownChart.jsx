@@ -8,12 +8,14 @@ export default function ScoreBreakdownChart({ score, weightsConfig }) {
   const data = weightsConfig.indicators.map((indicator) => {
     const value = Math.round(score.componentScores[indicator.key] * 10) / 10
     const isMainDriver = indicator.key === score.mainDriver
+    const risk = riskLevelForScore(value, weightsConfig.riskLevels)
     return {
       key: indicator.key,
       label: indicatorLabel(indicator.key, weightsConfig, lang),
       score: value,
       isMainDriver,
-      color: riskLevelForScore(value, weightsConfig.riskLevels).color,
+      color: risk.color,
+      textColor: risk.colorDeep,
     }
   })
 
@@ -26,7 +28,7 @@ export default function ScoreBreakdownChart({ score, weightsConfig }) {
         x={x + width + 8}
         y={y + height / 2}
         dy={4}
-        fill={entry.color}
+        fill={entry.textColor}
         fontSize={12}
         fontWeight={700}
       >
@@ -36,13 +38,13 @@ export default function ScoreBreakdownChart({ score, weightsConfig }) {
   }
 
   return (
-    <div className="breakdown-chart" style={{ width: '100%', height: 300 }}>
+    <div className="breakdown-chart" style={{ width: '100%', height: 340 }}>
       <ResponsiveContainer>
         <BarChart
           data={data}
           layout="vertical"
           margin={{ top: 4, right: 40, bottom: 0, left: 4 }}
-          barCategoryGap="34%"
+          barCategoryGap="42%"
         >
           <CartesianGrid horizontal={false} stroke="#eceadf" />
           <XAxis

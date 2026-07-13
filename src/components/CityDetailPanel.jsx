@@ -3,7 +3,7 @@ import { getRecommendation, indicatorLabel, riskLevelForScore } from '../lib/heb
 import ScoreBreakdownChart from './ScoreBreakdownChart'
 import { GaugeIcon, AlertTriangleIcon, TargetIcon } from './icons'
 
-function StatCard({ icon, label, value, color }) {
+function StatCard({ icon, label, value, color, textColor }) {
   return (
     <div className="stat-card">
       <span className="stat-card-icon" style={{ color, backgroundColor: `${color}1a` }}>
@@ -11,7 +11,7 @@ function StatCard({ icon, label, value, color }) {
       </span>
       <div className="stat-card-body">
         <span className="stat-card-label">{label}</span>
-        <span className="stat-card-value" style={{ color }}>
+        <span className="stat-card-value" style={{ color: textColor ?? color }}>
           {value}
         </span>
       </div>
@@ -32,10 +32,7 @@ export default function CityDetailPanel({ scoredCity, weightsConfig, recommendat
 
   const { city, score } = scoredCity
   const recommendation = getRecommendation(score.mainDriver, recommendations)
-  const mainDriverColor = riskLevelForScore(
-    score.componentScores[score.mainDriver],
-    weightsConfig.riskLevels,
-  ).color
+  const mainDriverRisk = riskLevelForScore(score.componentScores[score.mainDriver], weightsConfig.riskLevels)
 
   return (
     <section className="panel city-detail">
@@ -47,18 +44,21 @@ export default function CityDetailPanel({ scoredCity, weightsConfig, recommendat
           label={t.tableScore}
           value={`${score.hebiScore.toFixed(1)} ${t.scoreUnit}`}
           color={score.riskLevel.color}
+          textColor={score.riskLevel.colorDeep}
         />
         <StatCard
           icon={<AlertTriangleIcon />}
           label={t.tableRisk}
           value={localized(score.riskLevel, 'label', lang)}
           color={score.riskLevel.color}
+          textColor={score.riskLevel.colorDeep}
         />
         <StatCard
           icon={<TargetIcon />}
           label={t.tableDriver}
           value={indicatorLabel(score.mainDriver, weightsConfig, lang)}
-          color={mainDriverColor}
+          color={mainDriverRisk.color}
+          textColor={mainDriverRisk.colorDeep}
         />
       </div>
 
@@ -67,7 +67,7 @@ export default function CityDetailPanel({ scoredCity, weightsConfig, recommendat
           <div className="breakdown-header">
             <h3 className="panel-kicker">{t.breakdownTitle}</h3>
             <span className="driver-key">
-              <span className="driver-key-swatch" style={{ backgroundColor: mainDriverColor }} />
+              <span className="driver-key-swatch" style={{ backgroundColor: mainDriverRisk.color }} />
               {t.tableDriver}
             </span>
           </div>
