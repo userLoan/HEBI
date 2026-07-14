@@ -1,0 +1,152 @@
+{
+  "story": {
+    "heading": "about the app",
+    "paragraphs": {
+      "vi": [
+        "Xin chào mọi người! Mình tên là Mai Phúc Huy và là học sinh lớp 12 đến từ Hà Nội. Để mình kể cho mọi người một câu chuyện nè.",
+        "Năm mình lớp 11, mình rất may mắn có cơ hội được đến thực tập và làm hỗ trợ nghiên cứu tại Khoa Môi trường của HUNRE - Đại học Tài nguyên và Môi trường Hà Nội. Đặc biệt khi bọn mình đang làm khảo sát ô nhiễm kim loại nặng ở sông Hồng, mình đã thu thập những mẫu nước có nồng độ cadmium và chì vượt xa các ngưỡng hướng dẫn. Tuy nhiên, dòng sông vẫn uốn lượn hiền hòa, trong khi các làng ven sông tiếp tục canh tác, giặt giũ và sinh sống bên bờ.",
+        "Trái với hình dung của mình về những dòng nước đen đặc, phủ bọt và đầy cá chết, ô nhiễm ở đây gần như vô hình, âm thầm đi vào cơ thể và cộng đồng và sinh kế của chúng ta. Trải nghiệm đó khiến mình nhận ra rằng nhiều gánh nặng môi trường nghiêm trọng không phải lúc nào cũng dễ nhìn thấy, và chính điều này đã thôi thúc tôi phát triển HEBI như một cách biến những tác động ẩn ấy thành dữ liệu rõ ràng hơn.",
+        "HEBI là viết tắt của Hidden Environmental Burden Index, hay Chỉ số Gánh nặng Môi trường Ẩn (hì hì tên hay không guys) Ứng dụng kết hợp dữ liệu về mức độ phơi nhiễm môi trường với các yếu tố dễ tổn thương xã hội để tạo ra một điểm số so sánh giữa các thành phố Việt Nam. Mình muốn cái app này không chỉ là chỉ ra một thành phố đang ô nhiễm đến mức nào mà còn xem xét có bao nhiêu người có thể bị ảnh hưởng và khả năng thích ứng của cộng đồng.",
+        "HEBI được thiết kế như một công cụ nghiên cứu và trực quan hóa dữ liệu. Người dùng có thể xem điểm tổng hợp, phân tích các yếu tố đóng góp và nhận một khuyến nghị ban đầu dựa trên tác nhân chính. Kết quả của ứng dụng mang tính tham khảo và so sánh, không phải đánh giá chính thức về chất lượng môi trường hoặc hiệu quả quản lý của một thành phố."
+      ],
+      "en": [
+        "Hi everyone! I’m Mai Phuc Huy, a student at SJI International in Singapore. Let me tell you a quick story.",
+        "When I was in Grade 11, I was fortunate to have the opportunity to intern and assist with research at the Faculty of Environment at HUNRE, the Hanoi University of Natural Resources and Environment. While our team was studying heavy-metal contamination in the Red River, I collected water samples containing cadmium and lead at levels far above recommended guidelines. Yet the river still meandered calmly, while nearby villages continued to farm, wash, and live along its banks.",
+        "This was completely different from what I had imagined pollution would look like: black, foaming water filled with dead fish. Here, the pollution was almost invisible, quietly entering our bodies, communities, and livelihoods. That experience made me realize that many serious environmental burdens are not always easy to see, and it inspired me to develop HEBI as a way to turn these hidden impacts into clearer, more understandable data.",
+        "HEBI stands for the Hidden Environmental Burden Index, or Chỉ số Gánh nặng Môi trường Ẩn in Vietnamese. Pretty cool name, right? The application combines data on environmental exposure with measures of social vulnerability to produce a comparative score for Vietnamese cities. I wanted the app to do more than simply show how polluted a city is. It also considers how many people may be affected and how well communities are able to adapt.",
+        "HEBI is designed as a research and data-visualization tool. Users can view an overall score, examine the factors contributing to it, and receive an initial recommendation based on the city’s main burden driver. The results are intended for reference and comparison rather than as an official assessment of a city’s environmental quality or management performance."
+      ]
+    },
+    "experience": {
+      "label": {
+        "vi": "kinh nghiệm",
+        "en": "experience"
+      },
+      "items": [
+        {
+          "date": "2025",
+          "role": {
+            "vi": "Thực tập tại HUNRE",
+            "en": "HUNRE Internship"
+          },
+          "org": {
+            "vi": "Khoa Môi trường, Đại học Tài nguyên và Môi trường Hà Nội",
+            "en": "Faculty of Environment, Hanoi University of Natural Resources and Environment"
+          },
+          "type": {
+            "vi": "Thực tập sinh nghiên cứu",
+            "en": "Research intern"
+          }
+        }
+      ]
+    },
+    "images": {
+      "author": {
+        "src": "/about/DSC00755-2.jpg",
+        "alt": { "vi": "Mai Phúc Huy", "en": "Mai Phuc Huy" },
+        "email": "huy.mphuc@gmail.com"
+      },
+      "hunreLogo": {
+        "src": "/about/logo.jpg",
+        "alt": { "vi": "Logo HUNRE", "en": "HUNRE logo" }
+      },
+      "redRiver": {
+        "src": "/about/MatnuocSongHong-06112008333.jpeg",
+        "alt": { "vi": "Sông Hồng", "en": "The Red River" }
+      }
+    }
+  },
+  "methodology": {
+    "heading": {
+      "vi": "phương pháp",
+      "en": "methodology"
+    },
+    "intro": {
+      "vi": "HEBI đánh giá gánh nặng môi trường đô thị qua bảy chỉ số.",
+      "en": "HEBI assesses urban environmental burden through seven indicators."
+    },
+    "exposureGroup": {
+      "label": {
+        "vi": "3 chỉ số đo mức độ phơi nhiễm môi trường gồm:",
+        "en": "3 indicators measure environmental exposure:"
+      },
+      "indicators": [
+        { "vi": "PM2.5", "en": "PM2.5", "image": "/method/PM2.5.jpg" },
+        { "vi": "nhiệt độ đô thị", "en": "urban heat", "image": "/method/nhiệt độ.jpg" },
+        { "vi": "tiếng ồn", "en": "noise", "image": "/method/tiếng ồn.jpg" }
+      ]
+    },
+    "vulnerabilityGroup": {
+      "label": {
+        "vi": "4 chỉ số còn lại phản ánh mức độ dễ tổn thương của cộng đồng là",
+        "en": "The remaining 4 indicators represent community vulnerability:"
+      },
+      "indicators": [
+        { "vi": "mật độ dân số", "en": "population density", "image": "/method/mật độ.jpg" },
+        { "vi": "khả năng tiếp cận không gian xanh", "en": "access to green space", "image": "/method/không gian xanh.jpg" },
+        { "vi": "tỷ lệ nhóm dân số dễ tổn thương", "en": "the proportion of vulnerable population groups", "image": "/method/dễ tổn thương.jpeg" },
+        { "vi": "thu nhập bình quân đại diện", "en": "representative average income", "image": "/method/thu nhập.jpg" }
+      ]
+    },
+    "normalizationParagraph": {
+      "vi": "Do các chỉ số sử dụng những đơn vị khác nhau, mỗi giá trị được chuẩn hóa về thang điểm từ 0 đến 100. Điểm cao hơn biểu thị mức rủi ro lớn hơn. Với các chỉ số mang tính bảo vệ như không gian xanh và thu nhập, cách tính được đảo chiều: giá trị càng cao thì điểm rủi ro càng thấp.",
+      "en": "Because these indicators use different units, each value is normalized to a score between 0 and 100. A higher score indicates greater risk. Protective indicators, such as green-space access and income, are reverse-scored: higher raw values produce lower risk scores."
+    },
+    "formulaLabel": {
+      "vi": "Điểm HEBI được tính theo công thức:",
+      "en": "The HEBI score is calculated using the following formula:"
+    },
+    "formula": {
+      "vi": "HEBI = PM2.5 × 30% + Nhiệt độ × 20% + Tiếng ồn × 20% + Mật độ dân số × 10% + Thiếu không gian xanh × 8% + Nhóm dễ tổn thương × 7% + Rủi ro thu nhập × 5%",
+      "en": "HEBI = PM2.5 × 30% + Heat × 20% + Noise × 20% + Population Density × 10% + Green-Space Deficit × 8% + Vulnerable Population × 7% + Income Risk × 5%"
+    },
+    "researchNoteParagraph": {
+      "vi": "Công thức và hệ thống trọng số này được xây dựng dựa trên nghiên cứu độc lập của mình về các gánh nặng môi trường đô thị ẩn tại Việt Nam. Nghiên cứu hiện đang trong giai đoạn hoàn thiện và sẽ sớm được công bố đầy đủ, bao gồm cơ sở lựa chọn chỉ số, phương pháp chuẩn hóa, trọng số và các giới hạn của mô hình.",
+      "en": "This formula and weighting system are based on my independent research into hidden urban environmental burdens in Vietnam. The research is currently nearing completion and will soon provide a fuller account of the indicator selection, normalization method, weighting decisions, and limitations of the model."
+    },
+    "mainDriverParagraph": {
+      "vi": "“Tác nhân chính” là yếu tố có mức đóng góp sau trọng số lớn nhất vào điểm HEBI, không nhất thiết là yếu tố có điểm chuẩn hóa cao nhất. Ứng dụng sau đó sử dụng một thư viện quy tắc có sẵn để đưa ra khuyến nghị tương ứng. Cách tiếp cận này giúp kết quả nhất quán, minh bạch và dễ kiểm tra.",
+      "en": "The “main driver” is the factor with the largest weighted contribution to the HEBI score, rather than necessarily the indicator with the highest normalized score. The application then uses a predefined rule-based library to generate a corresponding recommendation. This approach keeps the results consistent, transparent, and easy to verify."
+    },
+    "relativeIndexParagraph": {
+      "vi": "HEBI là một chỉ số so sánh tương đối. Kết quả phụ thuộc vào dữ liệu, ngưỡng chuẩn hóa và trọng số được lựa chọn. Các lựa chọn này được giữ đơn giản trong phiên bản đầu và có thể được điều chỉnh khi có dữ liệu tốt hơn hoặc khi phạm vi nghiên cứu được mở rộng.",
+      "en": "HEBI is a relative comparative index. Its results depend on the available data, normalization thresholds, and selected weights. These choices have been kept deliberately simple in the first version and may be refined as stronger data become available or the scope of the research expands."
+    },
+    "flowDiagram": {
+      "caption": {
+        "vi": "Sơ đồ:",
+        "en": "Diagram:"
+      },
+      "steps": {
+        "vi": ["Dữ liệu đầu vào", "Chuẩn hóa", "Nhân trọng số", "Điểm HEBI", "Khuyến nghị"],
+        "en": ["Input Data", "Normalization", "Weighting", "HEBI Score", "Recommendations"]
+      }
+    }
+  },
+  "dataSources": {
+    "heading": {
+      "vi": "nguồn dữ liệu",
+      "en": "data sources"
+    },
+    "paragraphs": {
+      "vi": [
+        "HEBI kết hợp dữ liệu thời gian thực, dữ liệu thống kê công khai và các giá trị đại diện. Dữ liệu PM2.5 và nhiệt độ có thể được lấy từ Open-Meteo, một dịch vụ cung cấp dữ liệu thời tiết và chất lượng không khí theo tọa độ. IQAir và Open-Meteo cung cấp PM2.5 theo giờ dựa trên các mô hình của Copernicus Atmosphere Monitoring Service, đồng thời cung cấp dữ liệu thời tiết hiện tại và dự báo.",
+        "Dữ liệu dân số, mật độ dân số và các chỉ số kinh tế - xã hội được tổng hợp từ National Statistics Office of Vietnam (Cục Thống kê Việt Nam), bao gồm niên giám thống kê và dữ liệu cấp tỉnh, thành phố. Các báo cáo của World Bank và World Health Organization được sử dụng để tham khảo khi lựa chọn chỉ số, giải thích tác động sức khỏe và xác định các hướng can thiệp phù hợp. WHO xác định PM2.5 là một chất ô nhiễm quan trọng có thể xâm nhập sâu vào cơ thể, trong khi các nghiên cứu của World Bank cho thấy ô nhiễm PM2.5 tạo ra gánh nặng sức khỏe đáng kể tại Hà Nội.",
+        "Một số chỉ số, đặc biệt là tiếng ồn đô thị, không gian xanh, cơ cấu nhóm dễ tổn thương và thu nhập đại diện, chưa có dữ liệu đồng nhất cho tất cả các thành phố. Trong phiên bản hiện tại, các giá trị còn thiếu có thể được ước tính từ báo cáo công khai, nghiên cứu học thuật hoặc các thành phố có đặc điểm tương tự. Những giá trị này được dùng để hoàn thiện mô hình thử nghiệm và không nên được xem là số liệu chính thức.",
+        "Mỗi điểm dữ liệu nên được lưu cùng nguồn, năm tham chiếu và trạng thái dữ liệu, chẳng hạn như “thời gian thực”, “số liệu công bố”, “giá trị đại diện” hoặc “ước tính”. Khi có nguồn dữ liệu tốt hơn, các giá trị đầu vào có thể được thay thế mà không cần thay đổi cấu trúc tính điểm của ứng dụng."
+      ],
+      "en": [
+        "HEBI combines real-time data, publicly available statistics, and representative values. PM2.5 and temperature data may be retrieved from Open-Meteo, which provides coordinate-based weather and air-quality information. Its Air Quality API offers hourly PM2.5 data based on the Copernicus Atmosphere Monitoring Service, while its weather API provides current conditions and forecasts.",
+        "Population, population density, and socioeconomic indicators are compiled from the National Statistics Office of Vietnam, including its statistical yearbooks and provincial-level datasets. Reports from the World Bank and the World Health Organization inform the selection of indicators, the interpretation of health effects, and the proposed interventions. WHO identifies PM2.5 as a critical pollutant capable of penetrating deeply into the body, while World Bank research documents a substantial PM2.5-related health burden in Hanoi.",
+        "Some indicators, particularly urban noise, green-space access, vulnerable population shares, and representative income, are not consistently available for every city. In the current version, missing values may be estimated using public reports, academic studies, or comparisons with cities that have similar characteristics. These values support the prototype and should not be treated as official statistics.",
+        "Each data point should be stored with its source, reference year, and data status, such as “real time,” “published data,” “representative value,” or “estimate.” When stronger data become available, the inputs can be replaced without changing the application’s overall scoring structure."
+      ]
+    },
+    "sourceChips": [
+      { "vi": "Open-Meteo", "en": "Open-Meteo", "image": "/sources/large.png" },
+      { "vi": "Cục Thống kê Việt Nam", "en": "National Statistics Office of Vietnam", "image": "/sources/Logo_Tổng_cục_Thống_kê.svg.jpg" },
+      { "vi": "WHO", "en": "WHO", "image": "/sources/WHO logo.jpg" },
+      { "vi": "World Bank", "en": "World Bank", "image": "/sources/images.jpeg" }
+    ]
+  }
+}

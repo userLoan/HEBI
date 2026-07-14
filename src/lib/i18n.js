@@ -4,7 +4,7 @@ const STORAGE_KEY = 'hebi-lang'
 
 const dictionaries = {
   en: {
-    appTitle: 'HEBI Dashboard',
+    appTitle: 'Hidden Environmental\nBurden Index',
     mapTitle: 'City map',
     compareTitle: '5-city comparison',
     tableRank: 'Rank',
@@ -20,9 +20,16 @@ const dictionaries = {
     scoreUnit: '/ 100',
     selectCityLabel: 'Select city',
     summaryTitle: 'Summary',
+    navDashboard: 'Dashboard',
+    navAbout: 'About',
+    navDataSources: 'Data Sources',
+    navMethodology: 'Methodology',
+    aboutExposureGroupTitle: 'Environmental exposure',
+    aboutVulnerabilityGroupTitle: 'Community vulnerability',
+    aboutSourcesTitle: 'Sources',
   },
   vi: {
-    appTitle: 'HEBI Dashboard',
+    appTitle: 'Chỉ số Gánh nặng\nMôi trường Ẩn',
     mapTitle: 'Bản đồ thành phố',
     compareTitle: 'So sánh 5 thành phố',
     tableRank: 'Hạng',
@@ -38,6 +45,13 @@ const dictionaries = {
     scoreUnit: '/ 100',
     selectCityLabel: 'Chọn thành phố',
     summaryTitle: 'Tóm tắt kết quả',
+    navDashboard: 'Dashboard',
+    navAbout: 'Giới thiệu',
+    navDataSources: 'Nguồn dữ liệu',
+    navMethodology: 'Phương pháp',
+    aboutExposureGroupTitle: 'Phơi nhiễm môi trường',
+    aboutVulnerabilityGroupTitle: 'Dễ tổn thương cộng đồng',
+    aboutSourcesTitle: 'Nguồn dữ liệu',
   },
 }
 
