@@ -17,29 +17,6 @@
         "HEBI is designed as a research and data-visualization tool. Users can view an overall score, examine the factors contributing to it, and receive an initial recommendation based on the city’s main burden driver. The results are intended for reference and comparison rather than as an official assessment of a city’s environmental quality or management performance."
       ]
     },
-    "experience": {
-      "label": {
-        "vi": "kinh nghiệm",
-        "en": "experience"
-      },
-      "items": [
-        {
-          "date": "2025",
-          "role": {
-            "vi": "Thực tập tại HUNRE",
-            "en": "HUNRE Internship"
-          },
-          "org": {
-            "vi": "Khoa Môi trường, Đại học Tài nguyên và Môi trường Hà Nội",
-            "en": "Faculty of Environment, Hanoi University of Natural Resources and Environment"
-          },
-          "type": {
-            "vi": "Thực tập sinh nghiên cứu",
-            "en": "Research intern"
-          }
-        }
-      ]
-    },
     "images": {
       "author": {
         "src": "/about/DSC00755-2.jpg",

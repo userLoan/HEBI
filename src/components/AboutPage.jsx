@@ -33,34 +33,22 @@ export default function AboutPage() {
 
         <div className="story-section-text">
           <span className="story-section-number">02</span>
-          <h3 className="experience-label">{about.story.experience.label[lang]}</h3>
-          <div className="experience-list">
-            {about.story.experience.items.map((item) => (
-              <div className="experience-item" key={item.date + item.role.en}>
-                <span className="experience-date">{item.date}</span>
-                <div className="experience-content">
-                  <p className="experience-role">{item.role[lang]}</p>
-                  <p className="experience-org">{item.org[lang]}</p>
-                  <p className="experience-type">{item.type[lang]}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+          {paragraphs[1] && <p>{paragraphs[1]}</p>}
         </div>
 
-        {paragraphs[1] && <p>{paragraphs[1]}</p>}
+        <img className="about-hunre-logo" src={images.hunreLogo.src} alt={images.hunreLogo.alt[lang]} />
 
         <img className="about-river-photo" src={images.redRiver.src} alt={images.redRiver.alt[lang]} />
 
         {paragraphs[2] && <p>{paragraphs[2]}</p>}
 
-        <div className="story-section-text">
+        <div className="story-section-text story-section-text-spaced">
           <span className="story-section-number">03</span>
-          <h3 className="story-section-title">HEBI</h3>
+          {paragraphs[3] && <p>{paragraphs[3]}</p>}
         </div>
 
-        {paragraphs.slice(3).map((paragraph, index) => (
-          <p key={index + 3}>{paragraph}</p>
+        {paragraphs.slice(4).map((paragraph, index) => (
+          <p key={index + 4}>{paragraph}</p>
         ))}
       </section>
     </div>
