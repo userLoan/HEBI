@@ -55,10 +55,11 @@ export function computeCityScore(city, weightsConfig) {
 
   const riskLevel = riskLevelForScore(hebiScore, riskLevels)
 
-  const mainDriver = indicators.reduce((topKey, indicator) =>
-    contributions[indicator.key] > contributions[topKey] ? indicator.key : topKey,
-    indicators[0].key,
+  const rankedDrivers = [...indicators].sort(
+    (a, b) => contributions[b.key] - contributions[a.key],
   )
+  const mainDriver = rankedDrivers[0].key
+  const secondDriver = rankedDrivers[1].key
 
   return {
     cityId: city.id,
@@ -69,6 +70,7 @@ export function computeCityScore(city, weightsConfig) {
     hebiScore,
     riskLevel,
     mainDriver,
+    secondDriver,
   }
 }
 
@@ -86,8 +88,8 @@ export function computeAllCityScores(cities, weightsConfig) {
   return scored
 }
 
-export function getRecommendation(mainDriver, recommendations) {
-  return recommendations.byDriver[mainDriver] ?? recommendations.default
+export function getCityRecommendations(cityId, recommendations) {
+  return recommendations[cityId]
 }
 
 export function indicatorLabel(key, weightsConfig, lang) {

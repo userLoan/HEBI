@@ -1,84 +1,132 @@
 {
-  "default": {
-    "recommendationVi": "Tiếp tục theo dõi dữ liệu và cập nhật khuyến nghị khi có thêm thông tin.",
-    "recommendationEn": "Continue monitoring the data and update recommendations as more information becomes available.",
-    "action1Vi": "",
-    "action1En": "",
-    "action2Vi": "",
-    "action2En": "",
-    "explanationVi": "",
-    "explanationEn": ""
+  "ha-noi": {
+    "priority1": {
+      "driver": "pm25",
+      "paragraphsVi": [
+        "Hà Nội nên sử dụng giai đoạn triển khai Low-Emission Zone (Khu vực Phát thải Thấp) trong khu vực Vành đai 1 như một thí nghiệm chính sách có đối chứng, thay vì chỉ đánh giá bằng số phương tiện bị hạn chế. Thành phố có thể đặt các cụm cảm biến tham chiếu bên trong và ngoài ranh giới khu vực, đồng thời lựa chọn những hành lang giao thông có đặc điểm tương đồng để làm nhóm đối chứng. Kết quả nên được hiệu chỉnh theo điều kiện khí tượng và công bố theo tháng, tập trung vào thay đổi về PM2.5 cùng mức phơi nhiễm tại trường học hoặc cơ sở y tế. Cách đánh giá này sẽ giúp xác định liệu mức giảm ô nhiễm đến từ chính sách hay chỉ từ biến động theo mùa.",
+        "Tuy nhiên, khu vực phát thải thấp không nên được xem là giải pháp duy nhất. World Bank ước tính giao thông đóng góp khoảng 25% PM2.5 tại Hà Nội, nghĩa là phần lớn gánh nặng còn đến từ nguồn ngoài giao thông và ô nhiễm di chuyển từ khu vực lân cận. Thành phố nên kết hợp LEZ với một winter pollution protocol (quy trình ứng phó ô nhiễm mùa đông), được kích hoạt khi dự báo khí tượng cho thấy điều kiện khuếch tán kém. Trong những ngày này, các nguồn phát thải lớn đã được kiểm kê có thể phải giảm công suất tạm thời; hoạt động xây dựng cần áp dụng kiểm soát bụi nghiêm ngặt hơn. Việc đốt rác hoặc phụ phẩm nông nghiệp ở khu vực ngoại thành nên được giám sát bằng ảnh vệ tinh và xác minh tại hiện trường."
+      ],
+      "paragraphsEn": [
+        "Hanoi should treat the implementation of its Low-Emission Zone within Ring Road 1 as a controlled policy experiment rather than judging it only by the number of restricted vehicles. Reference-grade monitoring clusters could be placed inside and outside the zone, while comparable traffic corridors are selected as controls. Results should be adjusted for meteorological conditions and published monthly, with particular attention to changes in PM2.5 exposure around schools or health facilities. This design would help distinguish the effect of the policy from ordinary seasonal variation.",
+        "The low-emission zone should not be treated as a complete solution. The World Bank estimates that transport contributes approximately 25 per cent of Hanoi’s PM2.5, indicating that most of the burden comes from other sources or pollution transported from surrounding areas. The city should therefore pair the LEZ with a winter pollution protocol activated when forecasts indicate poor atmospheric dispersion. On those days, major inventoried emitters could be required to reduce operations temporarily, while construction sites face stricter dust controls. Waste and agricultural-residue burning in peri-urban districts should be detected through satellite observations and followed by field verification."
+      ],
+      "sources": "World Bank, Clean Air for Hanoi: What Will It Take?, 2025; Government News, Ha Noi to Pilot Low-Emission Zones in Nine Inner-City Wards, 2026."
+    },
+    "priority2": {
+      "driver": "noise",
+      "paragraphsVi": [
+        "Hà Nội nên tích hợp quản lý tiếng ồn vào chính khu vực phát thải thấp thay vì xây dựng một chương trình riêng biệt. Một strategic noise map (bản đồ tiếng ồn chiến lược) cần được lập cho các trục đường trong Vành đai 1 bằng hai chỉ số Lden và Lnight, qua đó phân biệt phơi nhiễm tổng hợp trong ngày với tiếng ồn ảnh hưởng đến giấc ngủ. Nghiên cứu tại Hà Nội từng ghi nhận mức Lden khoảng 70–83 dB trên các tuyến được khảo sát, trong khi tiếng còi có thể làm mức phơi nhiễm tăng thêm đến khoảng 4 dB. Vì vậy, hệ thống giám sát cần nhận diện các đỉnh tiếng còi và tiếng động cơ, không chỉ ghi lại giá trị trung bình.",
+        "Các khu vực được phân loại là Area A theo QCVN 26:2025, như trường học hoặc bệnh viện, nên có quiet frontage requirement (yêu cầu mặt tiếp giáp yên tĩnh). Khi cải tạo đường, hồ sơ mời thầu có thể yêu cầu kiểm tra tiếng ồn lốp xe bằng phương pháp CPX trước và sau thi công. Những đoạn gần cơ sở nhạy cảm nên ưu tiên mặt đường ít ồn hoặc thiết kế lại luồng xe. Thành phố cũng có thể thử nghiệm giới hạn còi xe theo thời gian trên một số hành lang, sau đó đánh giá thay đổi về Lnight và mức độ khó chịu của cư dân trước khi nhân rộng."
+      ],
+      "paragraphsEn": [
+        "Hanoi should integrate noise management into the same low-emission zone rather than creating an unrelated programme. A strategic noise map should be developed for Ring Road 1 corridors using Lden and Lnight, distinguishing overall daily exposure from noise that interferes with sleep. Research in Hanoi has reported Lden levels of approximately 70–83 dB on surveyed roads, while horn use can add up to roughly 4 dB. Monitoring should therefore identify horn-related and engine-related peaks rather than recording only average sound levels.",
+        "Locations classified as Area A under QCVN 26:2025, including schools and hospitals, should be subject to a quiet-frontage requirement. Road rehabilitation contracts could require CPX tyre-road noise testing before construction and after completion. Segments bordering sensitive facilities should receive low-noise surfaces or redesigned traffic flows. The city could also pilot time-based horn restrictions on selected corridors, then assess changes in Lnight and resident annoyance before expanding the intervention."
+      ],
+      "sources": "Phan et al., Community Responses to Road Traffic Noise in Hanoi and Ho Chi Minh City, 2010; Ministry of Agriculture and Environment, QCVN 26:2025/BNNMT, 2025."
+    }
   },
-  "byDriver": {
-    "pm25": {
-      "recommendationVi": "Ưu tiên giảm phơi nhiễm và phát thải bụi mịn PM2.5.",
-      "recommendationEn": "Prioritize reducing PM2.5 exposure and fine particulate emissions.",
-      "action1Vi": "Tăng giám sát chất lượng không khí tại trường học, bệnh viện và khu dân cư đông đúc.",
-      "action1En": "Increase air quality monitoring at schools, hospitals, and densely populated neighborhoods.",
-      "action2Vi": "Phát cảnh báo sức khỏe trong các ngày có nồng độ PM2.5 cao.",
-      "action2En": "Issue health advisories on days with high PM2.5 concentrations.",
-      "explanationVi": "PM2.5 là yếu tố đóng góp lớn nhất vào gánh nặng môi trường của thành phố.",
-      "explanationEn": "PM2.5 is the single largest contributor to the city's environmental burden."
+  "tp-hcm": {
+    "priority1": {
+      "driver": "noise",
+      "paragraphsVi": [
+        "TP. Hồ Chí Minh nên xây dựng một route-based noise exposure system (hệ thống đánh giá phơi nhiễm tiếng ồn theo tuyến đường), thay vì chỉ dựa trên các trạm cố định hoặc khiếu nại của người dân. Một nghiên cứu đo trên khoảng 1.000 km đường cho thấy người đi xe đạp tại thành phố chịu mức trung bình gần 78,8 dB(A); mức phơi nhiễm trên đường chính cao hơn hơn hai lần so với đường dân cư. Các khu vực trung tâm cũng cao hơn vùng ngoài trung tâm khoảng 6 dB. Thành phố có thể gắn thiết bị đo di động lên xe buýt, xe dịch vụ công hoặc phương tiện khảo sát để cập nhật bản đồ phơi nhiễm theo từng tuyến và khung giờ.",
+        "Dữ liệu này nên được sử dụng để tạo quiet mobility corridors (hành lang di chuyển ít ồn) nối các ga metro với khu dân cư. Trên những tuyến có mật độ người đi bộ cao, thành phố có thể áp dụng giới hạn tốc độ thấp hơn và thay mặt đường bằng vật liệu có mức phát sinh tiếng ồn đã được đo bằng CPX. Việc điều chỉnh giờ xe tải nên tập trung tại những đoạn gần nhà ở hoặc trường học. Hiệu quả chính sách cần được đo bằng mức phơi nhiễm tích lũy của người sử dụng tuyến, không chỉ bằng số lần xử phạt tiếng ồn."
+      ],
+      "paragraphsEn": [
+        "Ho Chi Minh City should develop a route-based noise-exposure system rather than relying only on fixed stations or resident complaints. A study covering approximately 1,000 kilometres of road found that cyclists experienced a mean exposure of about 78.8 dB(A), while exposure on primary roads was more than twice that recorded on residential streets. Central locations were also approximately 6 dB louder than peripheral areas. Mobile monitors could be installed on buses, municipal vehicles, or dedicated survey vehicles to update exposure maps by route and time of day.",
+        "The resulting data should support quiet mobility corridors connecting metro stations with residential areas. On routes with substantial pedestrian activity, the city could introduce lower speed limits and specify road surfaces whose acoustic performance has been measured through CPX testing. Freight schedules should be adjusted where logistics routes pass close to homes or schools. Policy success should be measured through cumulative exposure experienced by route users rather than the number of noise penalties issued."
+      ],
+      "sources": "Gelb and Apparicio, Noise Exposure of Cyclists in Ho Chi Minh City, 2019; Ministry of Agriculture and Environment, QCVN 26:2025/BNNMT, 2025."
     },
-    "heatTemp": {
-      "recommendationVi": "Ưu tiên giảm căng thẳng nhiệt tại các khu vực đô thị nóng.",
-      "recommendationEn": "Prioritize reducing heat stress in hot urban areas.",
-      "action1Vi": "Tăng cây xanh, bóng râm và các điểm làm mát công cộng.",
-      "action1En": "Expand urban tree cover, shading, and public cooling stations.",
-      "action2Vi": "Phát cảnh báo nắng nóng cho người lao động ngoài trời và nhóm dễ tổn thương.",
-      "action2En": "Issue heat warnings for outdoor workers and vulnerable groups.",
-      "explanationVi": "Nhiệt đô thị là yếu tố đóng góp lớn nhất vào gánh nặng môi trường của thành phố.",
-      "explanationEn": "Urban heat is the single largest contributor to the city's environmental burden."
+    "priority2": {
+      "driver": "pm25",
+      "paragraphsVi": [
+        "Khu vực phát thải thấp của TP. Hồ Chí Minh nên ưu tiên các phương tiện có vehicle-kilometres travelled (số kilômét vận hành) cao thay vì áp dụng cùng một quy định cho mọi phương tiện cá nhân. Các nhóm như xe giao hàng và xe công nghệ có thể di chuyển nhiều lần quãng đường của một xe máy hộ gia đình, nên tạo ra lượng phát thải tích lũy lớn hơn. Thành phố có thể yêu cầu giấy phép phát thải điện tử đối với các đội xe thương mại trong khu vực trung tâm, kết hợp kiểm tra khí thải từ xa tại những hành lang có lưu lượng cao. Dữ liệu đăng ký phương tiện nên được ghép với quãng đường hoạt động thực tế để xác định đối tượng chuyển đổi trước.",
+        "Chương trình này có thể dựa trên quá trình chuyển đổi đội xe buýt đang diễn ra. Đến đầu năm 2026, thành phố cho biết khoảng 48,4% đội xe buýt đã sử dụng điện hoặc năng lượng sạch. Thay vì phân bổ xe sạch đồng đều, các tuyến mới nên được ưu tiên cho những hành lang có PM2.5 cao và lượng hành khách lớn. Việc chuyển đổi xe giao hàng hoặc taxi cần đi kèm hỗ trợ thuê pin, tín dụng ưu đãi hoặc chương trình loại bỏ xe cũ theo mức thu nhập. Chỉ số đánh giá nên là lượng phát thải giảm trên mỗi kilômét phục vụ, cùng thay đổi về mức phơi nhiễm tại các điểm dân cư nhạy cảm."
+      ],
+      "paragraphsEn": [
+        "Ho Chi Minh City’s low-emission programme should prioritize vehicles with high vehicle-kilometres travelled rather than applying identical rules to all privately owned vehicles. Delivery motorcycles and ride-hailing vehicles may travel several times farther than household motorcycles, creating greater cumulative emissions. The city could require digital emissions permits for commercial fleets entering the central zone and use remote roadside testing on high-volume corridors. Registration records should be combined with actual operating distance to determine which vehicle groups should transition first.",
+        "This programme can build on the city’s ongoing bus-fleet conversion. By early 2026, approximately 48.4 per cent of the bus fleet was reported to use electricity or cleaner energy. Instead of distributing clean buses evenly, new vehicles should be assigned first to corridors combining high PM2.5 exposure with substantial ridership. The conversion of delivery vehicles or taxis should be supported through battery leasing, concessional credit, or income-sensitive scrappage assistance. Evaluation should focus on emissions avoided per service kilometre and changes in exposure at sensitive residential locations."
+      ],
+      "sources": "Vietnam News Agency, HCMC Adds 169 Electric Buses, Bringing Green Fleet Share to 48.4 Percent, 2026; Vietnam News Agency, HCMC Residents Pin Hopes on Low-Emission Zones, 2025."
+    }
+  },
+  "can-tho": {
+    "priority1": {
+      "driver": "pm25",
+      "paragraphsVi": [
+        "Cần Thơ nên xây dựng một seasonal agricultural air-quality programme (chương trình chất lượng không khí theo mùa vụ) gắn dữ liệu PM2.5 với lịch thu hoạch lúa. Cảm biến chi phí thấp có thể được đặt tại các xã ven đô, nhưng cần hiệu chuẩn bằng ít nhất một trạm tham chiếu. Dữ liệu điểm cháy từ vệ tinh nên được dùng để xác định khu vực cần kiểm tra tại hiện trường. Việc cấm đốt chỉ nên được thực thi nghiêm tại nơi đã có dịch vụ thu gom rơm hoặc đầu ra kinh tế, nếu không chính sách sẽ chuyển chi phí xử lý hoàn toàn sang nông dân.",
+        "Mô hình tại Hợp tác xã New Green Farm ở Thốt Nốt, với 101 hộ và 148 ha, cung cấp cơ sở cho một chương trình hợp đồng theo kết quả. Thành phố có thể trả cho hợp tác xã theo mỗi tấn rơm được thu gom có xác minh, trong khi doanh nghiệp đầu ra ký hợp đồng mua rơm cho sản xuất nấm hoặc phân hữu cơ. Khối lượng nên được ghi nhận bằng ảnh định vị và biên nhận cân, sau đó đối chiếu với dữ liệu điểm cháy. Chương trình cần đánh giá cả mức giảm PM2.5 trong mùa thu hoạch lẫn thay đổi về thu nhập ròng của hộ, qua đó tránh coi thu gom rơm chỉ là biện pháp môi trường không có mô hình tài chính."
+      ],
+      "paragraphsEn": [
+        "Can Tho should develop a seasonal agricultural air-quality programme linking PM2.5 monitoring with rice-harvest calendars. Low-cost sensors could be placed in peri-urban communes, but they should be calibrated against at least one reference station. Satellite fire detections should identify locations requiring field verification. Burning restrictions should be enforced most strongly where straw-collection services or viable markets already exist; otherwise, the policy would transfer the full disposal cost to farmers.",
+        "The New Green Farm Cooperative pilot in Thot Not, involving 101 households and 148 hectares, provides a basis for outcome-based contracting. The city could compensate cooperatives for each verified tonne of straw removed, while downstream businesses sign purchase agreements for mushroom production or organic fertilizer. Volumes should be recorded through geotagged photographs and weighbridge receipts, then checked against fire-detection data. Evaluation should measure both harvest-season PM2.5 reductions and changes in household net income, ensuring that straw management has a viable financial model."
+      ],
+      "sources": "International Rice Research Institute, Francophone Parliamentarians Visit Low-Emission Rice Pilot in Can Tho, 2025; Phuong et al., Impact of Rice Straw Open Burning on Local Air Quality in the Mekong Delta, 2021."
     },
-    "noise": {
-      "recommendationVi": "Ưu tiên kiểm soát tiếng ồn giao thông và xây dựng.",
-      "recommendationEn": "Prioritize controlling traffic and construction noise.",
-      "action1Vi": "Theo dõi tiếng ồn tại các trục đường lớn, trường học và bệnh viện.",
-      "action1En": "Monitor noise levels along major roads, schools, and hospitals.",
-      "action2Vi": "Hạn chế còi xe và hoạt động gây ồn tại các khung giờ nhạy cảm.",
-      "action2En": "Restrict honking and noisy activity during sensitive hours.",
-      "explanationVi": "Tiếng ồn là yếu tố đóng góp lớn nhất vào gánh nặng môi trường của thành phố.",
-      "explanationEn": "Noise is the single largest contributor to the city's environmental burden."
+    "priority2": {
+      "driver": "noise",
+      "paragraphsVi": [
+        "Cần Thơ nên nâng cấp mạng lưới quan trắc từng được khảo sát tại 15 vị trí thành một rotating acoustic monitoring programme (chương trình quan trắc âm học luân phiên). Nghiên cứu sử dụng dữ liệu năm 2020 ghi nhận mức tiếng ồn khoảng 68,73–79,54 dBA, với các nút giao thông và khu công nghiệp thường có mức cao hơn. Tiếng ồn cũng lớn hơn trong mùa khô. Thành phố có thể đặt thiết bị hiệu chuẩn luân phiên tại các cụm có rủi ro cao trong bốn đến sáu tuần, thay vì cố gắng duy trì một mạng lưới cố định quá đắt đỏ.",
+        "Kết quả nên được dùng để tạo hai nhóm quản lý riêng. Tại khu vực bến Ninh Kiều và các hành lang kinh tế ban đêm, giấy phép sự kiện hoặc cơ sở giải trí cần quy định mức Lnight tại ranh giới và yêu cầu bộ giới hạn âm lượng tự động. Trên các tuyến kết nối khu công nghiệp, chính sách nên tập trung vào giờ giao nhận hàng và khu vực cấm còi gần nhà ở. Dữ liệu tuân thủ cần được công bố ở cấp phường theo quý. Cấu trúc này phù hợp hơn với Cần Thơ so với một giới hạn chung toàn thành phố vì nguồn ồn tại khu vực du lịch ven sông khác với nguồn ồn trên hành lang công nghiệp."
+      ],
+      "paragraphsEn": [
+        "Can Tho should convert the network previously surveyed at 15 locations into a rotating acoustic-monitoring programme. Research using 2020 observations reported noise levels of approximately 68.73–79.54 dBA, with intersections and industrial areas generally recording higher values. Noise was also greater during the dry season. Calibrated instruments could be rotated through high-risk clusters for periods of four to six weeks rather than maintaining an unaffordable permanent network.",
+        "The results should support two separate management regimes. Around Ninh Kieu Wharf and night-time economy corridors, event permits or entertainment licences should specify boundary Lnight limits and require automatic sound limiters. On routes serving industrial areas, policy should focus on freight-delivery windows and no-horn zones near housing. Compliance data should be published quarterly at ward level. This structure is more appropriate than a single citywide rule because riverfront entertainment and industrial transport generate different noise patterns."
+      ],
+      "sources": "Nguyen Thanh Giao, Assessment of Air and Noise Quality in Can Tho City, 2021; Nguyen et al., Noise Pollution in Developing Countries: Loopholes and Recommendations for Vietnam Law, 2025."
+    }
+  },
+  "hai-phong": {
+    "priority1": {
+      "driver": "noise",
+      "paragraphsVi": [
+        "Hải Phòng nên bổ sung một acoustic performance annex (phụ lục hiệu suất âm học) vào chương trình xây dựng Quốc lộ 5 và Quốc lộ 10 thành các tuyến đường an toàn. Mỗi đoạn đường nên được xếp hạng theo mức độ nhạy cảm của khu vực tiếp nhận, kết hợp với đặc điểm vận hành và loại mặt đường. Những đoạn đi qua khu dân cư hoặc gần trường học cần được đo tiếng ồn lốp xe bằng phương pháp CPX trước khi lựa chọn phương án cải tạo. Hồ sơ mời thầu nên yêu cầu nhà thầu đạt một mức giảm dB cụ thể sau thi công, thay vì chỉ quy định loại vật liệu.",
+        "Đối với các tuyến kết nối khu công nghiệp hoặc cảng, thành phố nên điều chỉnh khung giờ xe tải để giảm Lnight tại khu dân cư. Giới hạn tốc độ ban đêm có thể được thiết kế nhằm giảm hiện tượng tăng tốc và phanh gấp gần cổng khu công nghiệp. Khoản thanh toán cuối cho nhà thầu mặt đường nên phụ thuộc một phần vào kết quả đo âm học sau sáu tháng, sau đó kiểm tra lại khi bề mặt đã hao mòn. Đây là cách đưa tiếng ồn trở thành chỉ tiêu hiệu suất của hạ tầng giao thông, thay vì xử lý như tác động phụ sau khi công trình đã hoàn thành."
+      ],
+      "paragraphsEn": [
+        "Hai Phong should add an acoustic-performance annex to its programme for making National Highways 5 and 10 safer corridors. Each road segment should be ranked according to receptor sensitivity, together with operating conditions and pavement characteristics. Sections passing residential areas or schools should undergo CPX tyre-road noise measurement before rehabilitation options are selected. Tender documents should require contractors to achieve a specified decibel reduction after completion rather than merely prescribing a material type.",
+        "For routes connecting industrial zones or ports, freight windows should be adjusted to reduce Lnight in adjoining residential areas. Night-time speed management could be designed to reduce acceleration and braking near industrial gates. Final payment for resurfacing contracts should depend partly on acoustic measurements taken six months after completion, followed by another test once the surface has aged. This would make noise a transport-infrastructure performance indicator rather than a secondary impact addressed after construction."
+      ],
+      "sources": "Nguyen Phan Anh, Semi-Quantitative Road Traffic Noise Risk Assessment for Data-Scarce Urban Areas: Evidence from Hai Phong, 2026; Hai Phong People’s Committee, Plan to Develop National Highways 5 and 10 as Safe Roads, 2026."
     },
-    "popDensity": {
-      "recommendationVi": "Ưu tiên can thiệp tại các khu vực có mật độ dân số cao.",
-      "recommendationEn": "Prioritize interventions in high-population-density areas.",
-      "action1Vi": "Đặt thiết bị giám sát môi trường tại các khu dân cư đông đúc.",
-      "action1En": "Deploy environmental monitoring equipment in densely populated neighborhoods.",
-      "action2Vi": "Tập trung cảnh báo và nguồn lực vào nơi có số người bị ảnh hưởng lớn nhất.",
-      "action2En": "Concentrate alerts and resources where the largest number of people are affected.",
-      "explanationVi": "Mật độ dân số cao làm cùng một mức ô nhiễm ảnh hưởng đến nhiều người hơn.",
-      "explanationEn": "High population density means the same level of pollution affects more people."
+    "priority2": {
+      "driver": "pm25",
+      "paragraphsVi": [
+        "Hải Phòng nên xây dựng port-corridor emissions inventory (kiểm kê phát thải hành lang cảng) kết hợp dữ liệu Automatic Identification System của tàu với dữ liệu vận hành tại cổng cảng. Hệ thống Truck Appointment System tại Cảng Container Quốc tế Hateco Hải Phòng đã tạo nền tảng để theo dõi thời gian xe tải đến, thời gian chờ và thời gian xử lý. Thành phố có thể yêu cầu các cảng lớn sử dụng một giao diện đặt lịch chung, qua đó giảm hàng xe chờ ngoài cổng và thiết lập quy định không nổ máy tại các vùng đệm.",
+        "Kiểm kê cần phân biệt phát thải từ tàu khi neo đậu với phát thải từ thiết bị trong bãi. HHIT đã sử dụng 36 cẩu e-RTG chạy điện, vì vậy giai đoạn tiếp theo nên tập trung vào điện bờ cho một tuyến tàu có lịch trình ổn định. Một bến thí điểm có thể yêu cầu hãng tàu báo cáo mức sử dụng động cơ phụ và lượng nhiên liệu trong mỗi lần cập cảng. Hiệu quả cần được đánh giá bằng PM2.5 hoặc black carbon tại khu vực gần cảng, kết hợp thời gian chờ của xe tải. Cách tiếp cận này giúp phân biệt liệu giảm ô nhiễm đến từ điện hóa thiết bị cảng hay cải thiện hoạt động logistics."
+      ],
+      "paragraphsEn": [
+        "Hai Phong should construct a port-corridor emissions inventory combining vessel Automatic Identification System data with port-gate operating records. The Truck Appointment System at Hateco Hai Phong International Container Terminal provides a basis for tracking truck arrivals, waiting periods, and processing times. The city could require major terminals to participate in a shared appointment interface, reducing queues outside port gates and supporting a zero-idling rule within designated buffer areas.",
+        "The inventory should distinguish emissions from ships at berth from those produced by yard equipment. HHIT already operates 36 electric e-RTG cranes, so the next phase should examine shore power for one service with a predictable schedule. A pilot berth could require vessel operators to report auxiliary-engine use and fuel consumption during each call. Performance should be evaluated through near-port PM2.5 or black-carbon monitoring alongside truck waiting time. This would clarify whether reductions result from equipment electrification or improvements in logistics operations."
+      ],
+      "sources": "Vietnam News Agency, Hai Phong Inaugurates Smart Deep-Water Port at Lach Huyen, 2025; APM Terminals, Transforming Hai Phong’s Port Operations Through Truck Appointment Systems, 2025."
+    }
+  },
+  "da-nang": {
+    "priority1": {
+      "driver": "noise",
+      "paragraphsVi": [
+        "Đà Nẵng nên chuyển từ xử phạt theo từng vụ việc sang một acoustic licensing system (hệ thống cấp phép âm thanh) dành cho nền kinh tế ban đêm tại các khu vực du lịch ven biển. Các quán bar, nhà hàng có biểu diễn hoặc địa điểm tổ chức sự kiện nên phải nộp kế hoạch kiểm soát tiếng ồn khi xin hoặc gia hạn giấy phép. Cơ sở có công suất lớn cần sử dụng bộ giới hạn âm lượng tự động và lưu nhật ký mức âm thanh tại ranh giới khu đất. Dữ liệu có thể được gửi định kỳ cho phường để phát hiện vi phạm kéo dài trước khi phát sinh khiếu nại.",
+        "Đà Nẵng đã thành lập các nhóm phản ứng nhanh ở một số khu vực và từng xử phạt các cơ sở ven biển vì vượt ngưỡng tiếng ồn. Thành phố nên chuyển kinh nghiệm này thành hệ thống risk-based inspection (kiểm tra theo mức rủi ro): cơ sở tái phạm hoặc nằm gần nhà ở sẽ bị giám sát thường xuyên hơn. Karaoke hộ gia đình nên được xử lý bằng một quy trình khác, trong đó phản ánh được định vị trên bản đồ và các điểm tái diễn được hỗ trợ đo âm thanh tại nguồn. Cách phân tách này tránh áp dụng cùng một công cụ quản lý cho hoạt động kinh doanh quy mô lớn và xung đột tiếng ồn trong khu dân cư."
+      ],
+      "paragraphsEn": [
+        "Da Nang should move from incident-based enforcement to an acoustic licensing system for the coastal night-time economy. Bars, restaurants offering performances, and event venues should submit noise-management plans when applying for or renewing operating licences. Larger establishments should use automatic sound limiters and retain boundary-level monitoring logs. These records could be transmitted periodically to ward authorities so that sustained exceedances are identified before complaints accumulate.",
+        "Da Nang has already used rapid-response teams in some neighbourhoods and has fined coastal venues for excessive noise. This experience should be converted into a risk-based inspection system in which repeat offenders or businesses located close to housing receive more frequent monitoring. Household karaoke should follow a separate process, with complaints geocoded and recurring hotspots offered source-level measurement. This distinction avoids applying the same regulatory instrument to large commercial venues and residential noise conflicts."
+      ],
+      "sources": "Tuoi Tre News, Da Nang Steps Up Measures Against Noise Pollution, 2025; Ministry of Agriculture and Environment, QCVN 26:2025/BNNMT, 2025."
     },
-    "greenSpace": {
-      "recommendationVi": "Ưu tiên mở rộng và bảo vệ không gian xanh đô thị.",
-      "recommendationEn": "Prioritize expanding and protecting urban green space.",
-      "action1Vi": "Phát triển công viên nhỏ, hành lang cây xanh và cây xanh quanh trường học.",
-      "action1En": "Develop pocket parks, green corridors, and tree cover around schools.",
-      "action2Vi": "Ưu tiên các khu dân cư đông đúc đang thiếu khả năng tiếp cận không gian xanh.",
-      "action2En": "Prioritize dense neighborhoods that currently lack access to green space.",
-      "explanationVi": "Thiếu không gian xanh làm giảm khả năng thích ứng với nhiệt, ô nhiễm và tiếng ồn.",
-      "explanationEn": "A lack of green space reduces resilience to heat, pollution, and noise."
-    },
-    "vulnerableGroup": {
-      "recommendationVi": "Ưu tiên bảo vệ trẻ em, người cao tuổi và người có vấn đề sức khỏe.",
-      "recommendationEn": "Prioritize protecting children, the elderly, and people with health conditions.",
-      "action1Vi": "Gửi cảnh báo môi trường qua trường học, bệnh viện và cơ sở cộng đồng.",
-      "action1En": "Distribute environmental alerts through schools, hospitals, and community centers.",
-      "action2Vi": "Ưu tiên giám sát tại các khu vực tập trung nhiều nhóm dễ tổn thương.",
-      "action2En": "Prioritize monitoring in areas with high concentrations of vulnerable residents.",
-      "explanationVi": "Tỷ lệ nhóm dễ tổn thương cao làm tác động môi trường trở nên nghiêm trọng hơn.",
-      "explanationEn": "A high share of vulnerable residents makes environmental impacts more severe."
-    },
-    "grdpPerCapita": {
-      "recommendationVi": "Ưu tiên các biện pháp bảo vệ môi trường dễ tiếp cận và chi phí thấp.",
-      "recommendationEn": "Prioritize accessible, low-cost environmental protection measures.",
-      "action1Vi": "Tập trung đầu tư công vào các cộng đồng có khả năng tự thích ứng thấp.",
-      "action1En": "Focus public investment on communities with low adaptive capacity.",
-      "action2Vi": "Cung cấp cảnh báo và dịch vụ bảo vệ sức khỏe miễn phí hoặc trợ giá.",
-      "action2En": "Provide free or subsidized health-protection alerts and services.",
-      "explanationVi": "Khả năng thích ứng kinh tế thấp làm người dân khó tự bảo vệ trước áp lực môi trường.",
-      "explanationEn": "Low economic adaptive capacity makes it harder for residents to protect themselves from environmental pressures."
+    "priority2": {
+      "driver": "heatTemp",
+      "paragraphsVi": [
+        "Đà Nẵng nên xây dựng một occupational heat protocol (quy trình bảo vệ lao động trước nhiệt) dựa trên Wet-Bulb Globe Temperature, thay vì chỉ dùng nhiệt độ không khí trong dự báo thời tiết. Quy trình nên áp dụng bắt buộc cho các dự án xây dựng do thành phố đặt hàng và các dịch vụ công ngoài trời. Khi WBGT vượt ngưỡng, nhà thầu phải điều chỉnh chu kỳ làm việc, bố trí nơi nghỉ có mái che và ghi nhận các triệu chứng liên quan đến nhiệt. Việc tuân thủ nên trở thành tiêu chí nghiệm thu hợp đồng hoặc gia hạn giấy phép.",
+        "Nghiên cứu tại Đà Nẵng đã xác định người lao động ngoài trời có thu nhập thấp, đặc biệt người làm việc tự do hoặc di cư, là nhóm có mức phơi nhiễm cao nhưng ít biện pháp bảo vệ tại nơi làm việc. Thành phố có thể đặt các cooling rest hubs (điểm nghỉ làm mát) gần chợ truyền thống hoặc khu vực tập trung lao động xây dựng. Cảnh báo nhiệt cần được gửi trực tiếp đến nghiệp đoàn, doanh nghiệp và đơn vị quản lý chợ. Mô hình Ahmedabad cho thấy Heat Action Plan có hệ thống cảnh báo và phân công trách nhiệm rõ ràng có liên quan đến việc giảm đáng kể tử vong trong các đợt nóng; Đà Nẵng có thể điều chỉnh mô hình này cho điều kiện nóng ẩm và lực lượng lao động phi chính thức."
+      ],
+      "paragraphsEn": [
+        "Da Nang should establish an occupational heat protocol based on Wet-Bulb Globe Temperature rather than relying only on standard air temperature forecasts. The protocol should be mandatory for municipally commissioned construction and outdoor public services. When WBGT thresholds are exceeded, contractors should modify work-rest cycles, provide shaded recovery areas, and document heat-related symptoms. Compliance should become part of contract acceptance or permit renewal.",
+        "Research in Da Nang has identified lower-income outdoor workers, particularly freelance or migrant workers, as highly exposed while receiving limited workplace protection. The city could establish cooling rest hubs near traditional markets or construction-employment clusters. Heat alerts should be delivered directly to labour organizations, businesses, and market-management boards. Ahmedabad’s Heat Action Plan shows that a warning system with clearly allocated responsibilities can be associated with substantial reductions in heat-related mortality. Da Nang could adapt this model to humid conditions and a large informal workforce."
+      ],
+      "sources": "Dao Thi Mai Hoa et al., Heat Stress and Adaptive Capacity of Low-Income Outdoor Workers in Da Nang, 2013; Hess et al., Building Resilience to Climate Change: Pilot Evaluation of India’s First Heat Action Plan, 2018."
     }
   }
 }

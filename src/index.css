@@ -610,38 +610,11 @@ body {
   white-space: nowrap;
 }
 
-/* Breakdown (left, larger) + summary/recommendation (right) */
+/* Breakdown (full width, top) + recommendation (below) */
 .detail-columns {
-  display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  gap: 28px;
-  align-items: start;
-}
-
-@media (max-width: 860px) {
-  .detail-columns {
-    grid-template-columns: 1fr;
-  }
-}
-
-.detail-side {
   display: flex;
   flex-direction: column;
-  gap: 18px;
-}
-
-.summary-box {
-  background: var(--color-surface-sunken);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  padding: 18px 20px 20px;
-}
-
-.summary-box p {
-  margin: 0;
-  font-size: 0.9rem;
-  line-height: 1.65;
-  color: var(--color-text-soft);
+  gap: 28px;
 }
 
 /* Breakdown chart header — kicker + main-driver key */
@@ -678,27 +651,33 @@ body {
   margin-top: 10px;
 }
 
-/* Recommendation — report-card aside */
+/* Recommendation — report-card asides, stacked per priority */
+.recommendation-group {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.recommendation-group .panel-kicker {
+  margin-bottom: 0;
+}
+
 .recommendation-box {
   background: var(--color-surface-sunken);
   border: 1px solid var(--color-border);
   border-left: 3px solid var(--color-accent);
   border-radius: var(--radius-sm);
   padding: 20px 22px 22px;
-  max-width: 70ch;
 }
 
-.recommendation-box h4 {
-  margin: 18px 0 7px;
-  font-size: 0.7rem;
+.recommendation-priority-title {
+  margin: 0 0 10px;
+  font-size: 0.95rem;
   font-weight: 700;
-  color: var(--color-text-faint);
-  text-transform: uppercase;
-  letter-spacing: 0.09em;
+  color: var(--color-text);
 }
 
-.recommendation-box p,
-.recommendation-box li {
+.recommendation-box p {
   margin: 0;
   font-size: 0.9rem;
   line-height: 1.65;
@@ -706,19 +685,14 @@ body {
 }
 
 .recommendation-box p + p {
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
-.recommendation-box ul {
-  margin: 0;
-  padding-left: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.recommendation-box li::marker {
-  color: var(--color-accent);
+.recommendation-box .recommendation-sources {
+  margin-top: 14px;
+  font-size: 0.78rem;
+  font-style: italic;
+  color: var(--color-text-faint);
 }
 
 /* --------------------------------------------------------------- about page */
@@ -766,6 +740,14 @@ body {
 
 .about-shell .panel p:last-child {
   margin-bottom: 0;
+}
+
+.section-spaced {
+  margin-top: 28px;
+}
+
+.section-spaced p {
+  line-height: 1.85;
 }
 
 .methodology-table {

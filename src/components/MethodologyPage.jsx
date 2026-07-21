@@ -57,6 +57,11 @@ export default function MethodologyPage() {
             ))}
           </div>
         </div>
+
+        <div className="section-spaced">
+          <p>{about.methodology.aiLayersParagraph1[lang]}</p>
+          <p>{about.methodology.aiLayersParagraph2[lang]}</p>
+        </div>
       </section>
     </div>
   )

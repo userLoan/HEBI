@@ -47,9 +47,13 @@ export default function AboutPage() {
           {paragraphs[3] && <p>{paragraphs[3]}</p>}
         </div>
 
-        {paragraphs.slice(4).map((paragraph, index) => (
-          <p key={index + 4}>{paragraph}</p>
-        ))}
+        {paragraphs[4] && <p>{paragraphs[4]}</p>}
+
+        <div className="section-spaced">
+          {paragraphs.slice(5).map((paragraph, index) => (
+            <p key={index + 5}>{paragraph}</p>
+          ))}
+        </div>
       </section>
     </div>
   )

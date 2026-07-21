@@ -1,5 +1,5 @@
 import { useI18n, localized } from '../lib/i18n'
-import { getRecommendation, indicatorLabel, riskLevelForScore } from '../lib/hebi'
+import { getCityRecommendations, indicatorLabel, riskLevelForScore } from '../lib/hebi'
 import ScoreBreakdownChart from './ScoreBreakdownChart'
 import { GaugeIcon, AlertTriangleIcon, TargetIcon } from './icons'
 
@@ -31,8 +31,17 @@ export default function CityDetailPanel({ scoredCity, weightsConfig, recommendat
   }
 
   const { city, score } = scoredCity
-  const recommendation = getRecommendation(score.mainDriver, recommendations)
+  const cityRecommendations = getCityRecommendations(city.id, recommendations)
   const mainDriverRisk = riskLevelForScore(score.componentScores[score.mainDriver], weightsConfig.riskLevels)
+  const priorities = cityRecommendations
+    ? [
+        { item: cityRecommendations.priority1, risk: mainDriverRisk },
+        {
+          item: cityRecommendations.priority2,
+          risk: riskLevelForScore(score.componentScores[score.secondDriver], weightsConfig.riskLevels),
+        },
+      ]
+    : []
 
   return (
     <section className="panel city-detail">
@@ -74,25 +83,21 @@ export default function CityDetailPanel({ scoredCity, weightsConfig, recommendat
           <ScoreBreakdownChart score={score} weightsConfig={weightsConfig} />
         </div>
 
-        <div className="detail-side">
-          <div className="summary-box">
-            <h3 className="panel-kicker">{t.summaryTitle}</h3>
-            <p>{localized(recommendation, 'explanation', lang)}</p>
-          </div>
-
-          <aside className="recommendation-box" style={{ borderLeftColor: score.riskLevel.color }}>
-            <h3 className="panel-kicker">{t.recommendationTitle}</h3>
-            <p>{localized(recommendation, 'recommendation', lang)}</p>
-            {recommendation.action1Vi && (
-              <>
-                <h4>{t.actionsTitle}</h4>
-                <ul>
-                  <li>{localized(recommendation, 'action1', lang)}</li>
-                  <li>{localized(recommendation, 'action2', lang)}</li>
-                </ul>
-              </>
-            )}
-          </aside>
+        <div className="recommendation-group">
+          <h3 className="panel-kicker">{t.recommendationTitle}</h3>
+          {priorities.map(({ item, risk }, index) => (
+            <aside key={item.driver} className="recommendation-box" style={{ borderLeftColor: risk.color }}>
+              <h4 className="recommendation-priority-title">
+                {t.priorityLabel} {index + 1}: {indicatorLabel(item.driver, weightsConfig, lang)}
+              </h4>
+              {(lang === 'vi' ? item.paragraphsVi : item.paragraphsEn).map((paragraph, pIndex) => (
+                <p key={pIndex}>{paragraph}</p>
+              ))}
+              <p className="recommendation-sources">
+                {t.sourcesLabel}: {item.sources}
+              </p>
+            </aside>
+          ))}
         </div>
       </div>
     </section>
