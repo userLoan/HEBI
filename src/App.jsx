@@ -12,6 +12,7 @@ import CityDetailPanel from './components/CityDetailPanel'
 import AboutPage from './components/AboutPage'
 import DataSourcesPage from './components/DataSourcesPage'
 import MethodologyPage from './components/MethodologyPage'
+import ChatWidget from './components/ChatWidget'
 
 function viewForPath(pathname) {
   if (pathname === '/about') return 'about'
@@ -46,6 +47,7 @@ function Dashboard() {
   return (
     <div className="app-root">
       <Header view={view} onNavigate={navigate} />
+      <ChatWidget />
       {view === 'about' ? (
         <AboutPage />
       ) : view === 'data-sources' ? (
