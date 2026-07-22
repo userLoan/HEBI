@@ -3,6 +3,7 @@
     "id": "ha-noi",
     "nameVi": "Hà Nội",
     "nameEn": "Hanoi",
+    "photo": "/thành phố/hanoi.jpg",
     "lat": 21.0285,
     "lon": 105.8542,
     "indicators": {
@@ -24,6 +25,7 @@
     "id": "tp-hcm",
     "nameVi": "TP. Hồ Chí Minh",
     "nameEn": "Ho Chi Minh City",
+    "photo": "/thành phố/hcmc.jpg",
     "lat": 10.8231,
     "lon": 106.6297,
     "indicators": {
@@ -45,6 +47,7 @@
     "id": "da-nang",
     "nameVi": "Đà Nẵng",
     "nameEn": "Da Nang",
+    "photo": "/thành phố/da nang.jpg",
     "lat": 16.0544,
     "lon": 108.2022,
     "indicators": {
@@ -66,6 +69,7 @@
     "id": "hai-phong",
     "nameVi": "Hải Phòng",
     "nameEn": "Hai Phong",
+    "photo": "/thành phố/hai phong.jpg",
     "lat": 20.8449,
     "lon": 106.6881,
     "indicators": {
@@ -87,6 +91,7 @@
     "id": "can-tho",
     "nameVi": "Cần Thơ",
     "nameEn": "Can Tho",
+    "photo": "/thành phố/can tho.jpg",
     "lat": 10.0452,
     "lon": 105.7469,
     "indicators": {
